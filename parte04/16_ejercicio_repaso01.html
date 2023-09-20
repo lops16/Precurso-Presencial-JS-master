@@ -17,6 +17,14 @@
          * 3. Para poder modificar la mitad de la palabra (mayúsculas), necesitarás primero obtener una cadena que sólo tenga esa parte
          * 4. Una vez que tengamos la mitad de la palabra en mayúsculas, tendrás que reemplazar una subcadena por otra
          */
+
+        let palabra = "pigmento"
+        let a = palabra.indexOf("p")
+        let b = palabra.indexOf("e")
+        let subpalabra = palabra.substring(a, b)
+        let subpalabraMayus = subpalabra.toLocaleUpperCase();
+        let repalabra = palabra.replace(subpalabra, subpalabraMayus);
+        console.log(repalabra);
     </script>
 </body>
 
