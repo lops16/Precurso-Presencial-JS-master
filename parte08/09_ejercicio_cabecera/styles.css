@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    background-color: rgb(44, 224, 245);
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    height: 100px;
+}
+
+#title{
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+#list{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+li{
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
