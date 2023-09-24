@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
-        /*
-        * Crear un array de 11 ints. Pedir al usuario que introduzca valores entre 0 y 10. Cada vez que introduzca un dígito, añadir uno al valor en esa posición del array.
-        * Si por ejemplo introduce un 3, sumar uno a la posición 3. Mostrar en pantalla los valores. Si introduce un número mayor que 10, decir que ese número es incorrecto.
-        * Si introduce un número negativo, mostrar en pantalla el número de cada posición y el valor que contiene. Por ejemplo, si introduce 7, 7, 7, 5, 6, 5, 9, 9, 10, -1 mostrar:
-        * 0
-        * 1	0
-        * 2	0
-        * 3	0
-        * 4	0
-        * 5	2
-        * 6	1
-        * 7	3
-        * 9	2
-        * 10 1
-        */
+      /*
+       * Crear un array de 11 ints. Pedir al usuario que introduzca valores entre 0 y 10. Cada vez que introduzca un dígito, añadir uno al valor en esa posición del array.
+       * Si por ejemplo introduce un 3, sumar uno a la posición 3. Mostrar en pantalla los valores. Si introduce un número mayor que 10, decir que ese número es incorrecto.
+       * Si introduce un número negativo, mostrar en pantalla el número de cada posición y el valor que contiene. Por ejemplo, si introduce 7, 7, 7, 5, 6, 5, 9, 9, 10, -1 mostrar:
+       * 0 0
+       * 1	0
+       * 2	0
+       * 3	0
+       * 4	0
+       * 5	2
+       * 6	1
+       * 7	3
+       * 9	2
+       * 10 1
+       */
 
-        let arrbase = [0,1,2,3,4,5,6,7,8,9,10];
-        
-        let impt=arrbase[prompt("Introduce un numero")]
-        
-        for (let i = 0; i < arrbase.length; i++){ console.log(arrbase[i]); };
-        
-        
+    let arrbase = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
+    while (true) {
+        let impt = prompt("Introduce un numero");
 
-        
-        
-        
+        if (impt <= 10 && impt >= 0) {
+            arrbase[impt] = arrbase[impt] + 1;
+            /* arrbase[impt]+= 1 lo mismo que linea 35*/
+        }
+
+        if (impt < 0) {
+            for (let i = 0; i < arrbase.length; i++) {
+            console.log(i + " " + arrbase[i]);
+            }
+        }
+
+        if (impt > 10) {
+            console.log("Es un numero incorrecto");
+        }
+
+        if (isNaN(impt)) {
+            console.log("No es un numero");
+        }
+    }
 
     </script>
 </body>
-
 </html>
