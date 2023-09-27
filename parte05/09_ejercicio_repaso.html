@@ -18,18 +18,28 @@
 
         let color = [];
 
-        let posicion0 = color[0]
-        let posicion1 = color[1];
-        let posicion2 = color[2];
+        for (let i = 0; i < 3; i++ ){
+            let tucolor = prompt("Introduce un color");
+            
+            if (i == 0) {
+                color[1] = tucolor;
+                
+            }
 
-        color[0] = prompt("Introduce un color");
-        color[1] = prompt("Introduce un color");
-        color[2] = prompt("Introduce un color");
+            if (i == 1) {
+                color[2] = tucolor;
+                
+            }
 
+            if (i == 2) {
+                color[0] = tucolor;
+                
+            }
+        
+        
+        }
 
-        console.log(color[1])
-        console.log(color[2])
-        console.log(color[0])
+        console.log(color)
         
 
     </script>
