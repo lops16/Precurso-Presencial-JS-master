@@ -83,7 +83,7 @@ li>a:visited{
 
 /* Service */
 
-.services{
+.services, .players, .works{
     border-top: solid 0.5px grey;
     height: 300px;
     display: flex;
@@ -91,7 +91,7 @@ li>a:visited{
     justify-content: space-around;
     align-items: center;
 }
-.box_title{
+.box_title, .player_title, .works_title{
     background-color:  rgb(220, 72, 72);
     border: none;
     padding: 0.8rem 1.8rem;
@@ -104,11 +104,94 @@ li>a:visited{
     border: none;
     background-color: white;
     color:  rgb(220, 72, 72);
+    align-self: flex-start;
 }
 .info{
     display: flex;
     padding: 0 2rem 0 2rem;
+    justify-content: center;
+}
+
+.card{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.8rem;
+    
+}
+
+.card_img{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 0.8rem;
+}
+
+.info_title{
+    padding-left: 0.8rem;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(75, 74, 74);
+}
+
+.info_txt, .profile_info, .name{
+    padding-bottom: 0.4rem;
+    font-size: 14px;
+    font-weight: 300;
+    color: gray;
+}
+
+/* players */
+
+.players{
+    height: 500px;
+}
+
+.player_id{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 2rem 0 2rem;
+}
+
+.profile_img>img{
+    width: 90%;
+}
+
+.galeri{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 
+footer{
+    height: 600px;
+    background-color: rgb(197, 197, 197);
+}
 
+.blog{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 0 2rem;
+}
+.blog_title{
+    padding-bottom: 1rem;
+}
+.news{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.news>img{
+    border: solid grey 0.5px;
+    padding: 0.2rem;
+}
+
+.news_info{
+    width: 60%;
+    padding: 1rem;
+}
